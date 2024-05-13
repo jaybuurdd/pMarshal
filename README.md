@@ -23,9 +23,9 @@ Analytics: Provide fundamental anlaytics and one advanced analytic feature calle
 Real-time Data: Fetching real-time data from the blockchain.
 
 ### Tech Stack (so far...)
-**Frontend**:ReactJS, NEAR [Javascript SDK] (Builddrop Partner)
+**Frontend**:ReactJS, NEAR [Javascript SDK] (Backdrop Partner)
 
 **Backend**: 
-Python + FastAPI, Convex (Buildrop Partner)
+Python + FastAPI, Convex (Backdrop Partner)
 
 
