@@ -1,0 +1,40 @@
+.navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100vh;
+    height: 5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    margin-left: 1rem;
+}
+
+.navbar-center {
+    justify-content: center; 
+    flex-grow: 1; /* Allows the center to take up the most space */
+}
+
+.navbar Button {
+    background-color: gray;
+    color: whitesmoke;
+    margin-right: 1rem;
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Hover effect for links */
+}
