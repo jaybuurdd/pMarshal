@@ -1,0 +1,11 @@
+.graph-container {
+    border: 1px solid red;
+    width: 90%;
+}
+
+.graph-container canvas {
+    border: 1px solid rebeccapurple;
+    width: 100% !important;
+    height: 100% !important;
+
+}

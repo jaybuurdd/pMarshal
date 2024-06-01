@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-function App() {
+import ResponsiveContainer from './utils/ResponsiveContainer';
+import Navbar from './components/layout/Navbar';
+import Portfolio from './pages/Portfolio Flow/Portfolio';
+import WalletAnalytics from './pages/Portfolio Flow/WalletAnalytics';
+import TransLink from './pages/Portfolio Flow/TransLink';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ResponsiveContainer>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Portfolio />} />
+          <Route path='/portfolio' element={<Navigate replace to='/' />} />
+          <Route path="/portfolio/:portfolioName/:walletId" element={<WalletAnalytics />} />
+          <Route path="/portfolio/:portfolioName/:walletId/:transactionHash/trans-link" element={<TransLink />} />
+        </Routes>
+      </ResponsiveContainer> 
   );
 }
 
-export default App;
